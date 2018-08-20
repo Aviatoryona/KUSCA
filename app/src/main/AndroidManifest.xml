@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aviator.kusca">
+
+    <uses-sdk tools:overrideLibrary="com.andremion.floatingnavigationview" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_two"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_two"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppTheme.Light.NoActionBar">
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppTheme.Light.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/Theme.AppTheme.Light.NoActionBar" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppTheme.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.kusca.MainActivity" />
+        </activity>
+        <activity android:name=".KuscaTeam" />
+        <activity
+            android:name=".KuscaEvents"
+            android:label="@string/title_activity_kusca_events"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppTheme.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.kusca.MainActivity" />
+        </activity>
+        <activity android:name=".KuscaElection" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".KuscaGallery" />
+        <activity android:name=".KuscaAnnouncements" />
+        <activity
+            android:name=".Admin"
+            android:label="@string/title_activity_admin"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppTheme.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.kusca.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Exmp"
+            android:label="@string/title_activity_exmp"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aviator.kusca.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Demo"
+            android:label="@string/title_activity_demo"
+            android:theme="@style/Theme.AppTheme.Light.NoActionBar"></activity>
+    </application>
+
+</manifest>

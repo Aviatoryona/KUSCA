@@ -1,0 +1,225 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:gpb="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.aviator.kusca.FullscreenActivity">
+
+    <!--android:background="@mipmap/backg"
+     The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="KUSCA"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/lnOut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <LinearLayout
+            android:padding="22dp"
+            android:layout_width="256dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:background="@mipmap/bia_hw_large"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:paddingTop="30dp"
+                android:id="@+id/kusca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="KUSCA"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp"
+                tools:ignore="HardcodedText" />
+
+            <com.sdsmdg.harjot.rotatingtext.RotatingTextWrapper
+                android:layout_marginTop="22dp"
+                android:padding="22dp"
+                android:layout_gravity="center"
+                android:id="@+id/custom_switcher"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:visibility="gone"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+                android:id="@+id/google_progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone"
+                gpb:type="folding_circles" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginEnd="50dp"
+                android:layout_gravity="end"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/kucsablue"
+                android:id="@+id/image_profile"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="2dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="2dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/xtx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome"
+                        android:textColor="@color/colorCardBg"
+                        android:textSize="35sp"
+                        tools:ignore="HardcodedText" />
+
+                    <com.github.florent37.materialtextfield.MaterialTextField
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mtf_animationDuration="1000"
+                        app:mtf_cardCollapsedHeight="4dp"
+                        app:mtf_image="@android:drawable/ic_dialog_email"
+                        app:mtf_labelColor="@color/squareColor"
+                        app:mtf_openKeyboardOnFocus="true">
+                        <EditText
+                            android:id="@+id/appCompatEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/colorBlack"
+                            tools:ignore="HardcodedText,PxUsage" />
+                    </com.github.florent37.materialtextfield.MaterialTextField>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/xtx2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Join us in our mission to change the world"
+                        android:textColor="@color/colorWhite"
+                        tools:ignore="HardcodedText" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="40dp"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorPrimary" />
+
+                        <!--<Button-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Get Started"-->
+                            <!--android:textColor="@android:color/white"-->
+                            <!--android:background="@color/colorAccent"-->
+                            <!--android:id="@+id/btnContinue"-->
+                            <!--tools:ignore="HardcodedText" />-->
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/btnContinue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="0dp"
+                            android:minHeight="@dimen/demo_button_min_height"
+                            android:minWidth="@dimen/demo_button_min_width"
+                            android:text="Get Started"
+                            android:textColor="@android:color/white"
+                            fbutton:buttonColor="@color/fbutton_color_wet_asphalt"
+                            fbutton:cornerRadius="15dp"
+                            fbutton:shadowEnabled="true"
+                            fbutton:shadowHeight="6dp"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+                        <!--android:drawableRight="@drawable/ic_navigate_next_black_24dp"-->
+                        <View
+                            android:layout_width="40dp"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

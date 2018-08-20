@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText">'
+    <item
+        android:id="@+id/action_agm"
+        android:orderInCategory="100"
+        android:title="AGM"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/action_trips"
+        android:orderInCategory="100"
+        android:title="Trips"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/action_elections"
+        android:orderInCategory="100"
+        android:title="Elections"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+
+</menu>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.lid.lib.LabelTextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@color/fbutton_color_midnight_blue"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Computer Day Out"
+                android:textColor="#ffffff"
+                app:label_backgroundColor="@android:color/holo_orange_dark"
+                app:label_distance="15dp"
+                app:label_orientation="LEFT_TOP"
+                app:label_text="KUSCA"
+                app:label_textSize="10sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/txtHp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="20/12/17"
+                android:textColor="@color/dark_red"
+                tools:ignore="HardcodedText" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:cropToPadding="true"
+                android:src="@mipmap/laptop"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/large_text"
+                android:id="@+id/txtBody"/>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="end"
+                    android:padding="15dp"
+                    android:text="posted\n12hrs ago"
+                    android:textColor="@color/colorOrange"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/bPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRESIDENT"
+        android:textColor="@color/squareColor"
+        android:textSize="26sp"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/bPhoto"
+        android:layout_marginTop="10dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:civ_border_width="1dp"
+        android:src="@mipmap/default_avatar"/>
+
+    <TextView
+        android:id="@+id/bName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Name"
+        android:textSize="22sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/bInfo"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The I affects the WE ,Take responsibility.Never Give up.Embrace Technology"
+        android:textColor="@color/colorBlack"
+        tools:ignore="HardcodedText" />
+
+    <info.hoang8f.widget.FButton
+        android:visibility="gone"
+        android:id="@+id/bProfile"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view profile"
+        app:buttonColor="@color/fbutton_color_clouds"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

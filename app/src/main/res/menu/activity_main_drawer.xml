@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_team"
+            android:icon="@drawable/ic_group_work_black"
+            android:title="Our Team"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_event_black"
+            android:title="Events"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_image_black"
+            android:title="Gallery"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:id="@+id/nav_announcements"
+            android:icon="@drawable/ic_announcement_black"
+            android:title="Announcements"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_email_black"
+            android:title="Contact Us"
+            tools:ignore="HardcodedText" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_account_circle_black"
+                android:title="Login"
+                tools:ignore="HardcodedText" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_close_black"
+                android:title="Exit"
+                tools:ignore="HardcodedText" />
+        </menu>
+
+    </item>
+
+    <item android:title="Find us"
+        tools:ignore="HardcodedText">
+        <menu>
+            <item
+                android:id="@+id/nav_socail"
+                android:title=""
+                app:actionLayout="@layout/nav_social"
+                tools:ignore="HardcodedText" />
+        </menu>
+    </item>
+
+</menu>
